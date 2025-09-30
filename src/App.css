@@ -1,0 +1,162 @@
+/* Global Styles and Font */
+body {
+  font-family: 'Inter', sans-serif; /* A clean, modern font */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* Light background */
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.weather-dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+/* Section Styling (General Card Look) */
+section {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #007bff;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Table Styling (CityTable Component)  */
+
+.table-scroll-wrapper {
+  overflow-x: auto; /* Makes the table responsive on small screens */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px; /* Ensure columns don't compress too much */
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #495057;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.loading-message {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Search Section Styling (SearchBox Component) */
+
+.search-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#city-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+#city-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#search-button {
+  padding: 10px 25px;
+  background-color: #28a745; /* Green button for search */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+#search-button:hover {
+  background-color: #218838;
+}
+
+/* Search Result Card */
+
+.weather-card {
+  border: 1px solid #e9ecef;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  margin-top: 20px;
+}
+
+.weather-card h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.initial-message {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.error-message {
+    color: #dc3545; /* Red for errors */
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #dc3545;
+    background-color: #f8d7da;
+    border-radius: 4px;
+}
+
+/* Footer Styling */
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  color: #6c757d;
+  font-size: 0.9em;
+  border-top: 1px solid #e9ecef;
+}
